@@ -18,6 +18,11 @@ export const slice = createSlice({
         content: 'What is Vue?'
       }
     ]
+  },
+  reducers: {
+    next: state => {
+      state.activeQuestion += 1
+    }
   }
 });
 
@@ -27,5 +32,7 @@ export const selectActiveQuestion = state => {
   const { questions, activeQuestion} = state.quiz;
   return questions[activeQuestion]
 };
+
+export const { next } = slice.actions;
 
 export default slice.reducer;
