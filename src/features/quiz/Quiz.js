@@ -1,7 +1,12 @@
 import React from 'react';
+import { selectQuestions } from './quizSlice';
+import { useSelector } from 'react-redux';
 
 const Quiz = () => {
-  return <div>Quiz</div>
+  const questions = useSelector(selectQuestions);
+  return <div>
+    {questions.map(question => <p key={question.id}>{question.content}</p>)}
+  </div>
 }
 
 export default Quiz;
