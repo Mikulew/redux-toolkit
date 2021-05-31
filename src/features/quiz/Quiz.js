@@ -1,11 +1,16 @@
 import React from 'react';
-import { selectQuestions } from './quizSlice';
+import { selectActiveQuestion } from './quizSlice';
 import { useSelector } from 'react-redux';
 
+import { Button } from '@material-ui/core'
+
 const Quiz = () => {
-  const questions = useSelector(selectQuestions);
+  const questions = useSelector(selectActiveQuestion);
+
   return <div>
-    {questions.map(question => <p key={question.id}>{question.content}</p>)}
+    <p>{questions.content}</p>
+
+    <Button>Next</Button>
   </div>
 }
 
