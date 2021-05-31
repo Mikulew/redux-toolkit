@@ -28,10 +28,9 @@ export const slice = createSlice({
 
 export const selectQuestions = state => state.quiz.questions;
 
-export const selectActiveQuestion = state => {
-  const { questions, activeQuestion} = state.quiz;
-  return questions[activeQuestion]
-};
+export const selectActive = state => state.quiz.questions;
+
+export const selectActiveQuestion = state => state.quiz.activeQuestion;
 
 export const { next } = slice.actions;
 

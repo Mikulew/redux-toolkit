@@ -1,18 +1,21 @@
 import React from 'react';
-import { selectActiveQuestion, next } from './quizSlice';
+import { selectActiveQuestion, selectQuestions, next } from './quizSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Button } from '@material-ui/core'
 
 const Quiz = () => {
-  const questions = useSelector(selectActiveQuestion);
+  const activeQuestion = useSelector(selectActiveQuestion);
+  const questions = useSelector(selectQuestions);
   const dispatch = useDispatch();
+  const handleNext = () => questions[activeQuestion + 1] ? dispatch(next()) : console.log('finished!');
 
   return <div>
-    <p>{questions.content}</p>
+    <p>{activeQuestion + 1} / {questions.length}</p>
+    <p>{questions[activeQuestion].content}</p>
 
     <Button
-      onClick={() => dispatch(next())}
+      onClick={handleNext}
     >
       Next
     </Button>
