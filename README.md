@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Table of contents
 
-## Available Scripts
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Source](#Source)
 
-In the project directory, you can run:
+## General info
 
-### `npm start`
+The Redux Fundamentals tutorial teaches "how Redux works, from the bottom up", by showing how to write Redux code by hand and why standard usage patterns exist. It then shows how Redux Toolkit simplifies those Redux usage patterns.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Since Redux Toolkit is an abstraction layer that wraps around the Redux core, it's helpful to know what RTK's APIs are actually doing for you under the hood. If you want to understand how Redux really works and why RTK is the recommended approach, read the Redux Fundamentals tutorial.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- HTML5
+- CSS
+- React.js/Redux/Redux Toolkit
+- JavaScript (ES6)
+- npm
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+> To run this project, install it locally using npm
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development server (compiles and hot-reloads)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```bash
+# install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# serve with hot reload at localhost:8080
+npm run start
+```
 
-### `npm run eject`
+### Build setup (development)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# install dependencies
+npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# build for production with minification in the "dist" directory
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Source
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project is written step by step according to [this tutorial](https://www.youtube.com/watch?v=2BO5d-BWgvs 'See tutorial'). I only slightly modified it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Official Redux Toolkit documentation](https://redux-toolkit.js.org/)
