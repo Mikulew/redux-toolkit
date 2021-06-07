@@ -16,7 +16,7 @@ Since Redux Toolkit is an abstraction layer that wraps around the Redux core, it
 - HTML5
 - CSS
 - React.js/Redux/Redux Toolkit
-- JavaScript (ES6)
+- JavaScript (ES6+)
 - npm
 
 ## Setup
@@ -39,8 +39,15 @@ npm run start
 # install dependencies
 npm install
 
-# build for production with minification in the "dist" directory
+# build for production with minification in the "build" directory
 npm run build
+```
+
+### Demounting setup
+
+```bash
+# remove the "build" directory
+npm run clean
 ```
 
 ## Source
